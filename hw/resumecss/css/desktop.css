@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body{
+  font-family: sans-serif;
+}
+
+h1 {
+  color: darkblue
+}
+
+h2{
+  color: darkblue;
+}
+
+h3{
+  color: darkblue;
+}
+
+h3 em{
+  text-decoration:underline;
+  color: darkblue
+}
+
+Body{
+  background-color: lightgrey;
+  color: black
+}
+
+nav{
+
+}
+
+nav ul{
+  color:darkblue
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: darkblue;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+nav ul li a:hover{
+  color:blue;
+  background-color: white
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  color: darkblue;
+  text-decoration: underline;
+}
+
+nav{
+  width: 500px;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+
+  body{
+    font-family: 'Oswald', sans-serif;
+    background-color: grey;
+  }
+
+  header{
+    background-color: white;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  main{
+    background-color: white;
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Oswald', sans-serif;
+
+
+  }
+
+  footer{
+    background-color: white;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: darkblue;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  h3 em{
+    text-decoration: underline;
+    color: darkblue;
+  }
+
+  nav{
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  nav ul{
+    margin-left: -30px;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover{
+    background-color: lightgrey;
+  }
+
+
+
+  a:hover{
+    color: black;
+  }
+
+  p {
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+
+  }
+
+  .centerText{
+    text-align: center;
+  }
+
+  .greyOut{
+    color: grey;
+  }
+
+  section{
+    margin-bottom: 100px;
+  }
+
+  .PastWork{
+    margin-bottom: 50px;
+    width: 200px;
+    height: 250px;
+    display: inline-table;
+    padding: 10px;
+    background-color: lightgrey;
+  }
+
+  #moveUp{
+    margin-top: -25px;
+  }
+
+  .titles{
+    font-weight: bold;
+  }
