@@ -5,7 +5,12 @@ body{
   font-family: sans-serif;
 }
 
-h1 {
+.title {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.works {
   color: darkblue
 }
 
@@ -24,33 +29,35 @@ h3 em{
 
 Body{
   background-color: lightgrey;
-  color: black
 }
 
 nav{
-
+  width: 350px;
+  margin: 0 auto;
 }
 
 nav ul{
   color:darkblue
+  margin-left: -30px;
 }
-
 nav ul li{
   list-style: none;
   display: inline-block;
+  margin-right: 30px;
 }
-
 nav ul li a{
   text-decoration: none;
   color: darkblue;
   font-size: 30px;
   font-weight: bold;
-
 }
+
 nav ul li a:hover{
   color:blue;
-  background-color: white
+  background-color: lightgrey;
 }
+
+
 
 a{
   text-decoration: none;
@@ -62,11 +69,8 @@ a:hover{
   text-decoration: underline;
 }
 
-nav{
-  width: 500px;
-  margin: 0 auto;
-  margin-right: 20px;
-}
+
+
 
   body{
     font-family: 'Oswald', sans-serif;
@@ -88,10 +92,9 @@ nav{
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
-    font-family: 'Oswald', sans-serif;
-
-
   }
+
+
 
   footer{
     background-color: white;
@@ -99,58 +102,30 @@ nav{
     margin: 0 auto;
   }
 
-  h1 {
-    color: darkblue;
-    font-family: 'Oswald', sans-serif;
-  }
-
-  h3 em{
-    text-decoration: underline;
-    color: darkblue;
-  }
-
-  nav{
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  nav ul{
-    margin-left: -30px;
-  }
-  nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color: darkblue;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  nav ul li a:hover{
-    background-color: lightgrey;
-  }
 
 
 
-  a:hover{
-    color: black;
-  }
+
+
 
   p {
     line-height: 50px;
     font-family: 'Oswald', sans-serif;
 
+
+
   }
 
-  .centerText{
+  #centerText{
     text-align: center;
   }
 
   .greyOut{
     color: grey;
+  }
+
+  .writing{
+    color: black;
   }
 
   section{
@@ -168,8 +143,4 @@ nav{
 
   #moveUp{
     margin-top: -25px;
-  }
-
-  .titles{
-    font-weight: bold;
   }
