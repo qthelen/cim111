@@ -12,5 +12,19 @@
 
 
   grid-template-rows: 1fr auto 1fr;
-  grid-template-columns: 960 px;
+  grid-template-columns: 1fr px;
+}
+
+#grid1{
+  width: 100%;
+  display: grid;
+  grid-template-rows: 960px;
+  grid-template-columns: 480px 480px;
+}
+
+#grid2{
+  width:100%;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 320px 320px 320px;
 }

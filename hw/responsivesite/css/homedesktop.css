@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+
+body{
+  background-color: darkgrey;
+  font-family: 'Oswald', sans-serif;
+}
+
+#workgrid{
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 33% 33% 33%;
+  background-color: lightgrey;
+}
+
+.title{
+  color:darkblue
+}
+
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.center{
+  text-align: center;
+}
+
+
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  border-color: black;
+  border-width: 30px;
+}
