@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+
+    <title>How to make FAT BEATS</title>
+
+
+
+    <meta name="author" content="Quentin Thelen" >
+    <meta name="keywords" content="resume, education, work, music production,
+     producer, mixing, mastering, music">
+    <meta name="description" content="This website is about my work.">
+
+    <link rel="stylesheet" href="css/homedesktop.css" media="only screen and (min-width: 650px)">
+
+    <link rel="stylesheet" href="css/homemobile.css" media="only screen and (max-width: 650px)">
+
+    <style>
+
+    .box{
+        width: 100px;
+        height: 1fr;
+        background-color: lightblue;
+        margin-bottom: 20px;
+      }
+
+      .box2{
+          width: 80%;
+          height: 1fr;
+          background-color: lightblue;
+          margin-bottom: 20px;
+        }
+
+    </style>
+
+
   </head>
   <body>
+
+
+
+      <body>
+
+        <header>
+          <h1 class="title">Thelen</h1>
+          <h2>FAT BEAT MAKING 101</h2>
+        </header>
+
+        <main>
+          <h2 class="title"></h2> <p>
+
+
+        </main>
+        <div class="box" id="box1"></div>
+    <div class="box" id="box7">Click Here for step 1</div>
+    <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
+
+        <div class="box" id="box1"></div>
+    <div class="box" id="box7">Click Here for step 1</div>
+    <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
+
+    <div class="box" id="box7">Click Here for Step 2</div>
+    <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
+
+
+
+    <div class="box2" id="box5">Click to show image</div>
+    <div class="box2" id="box6">Click to hide/remove html image</div>
+    <div id="box5Image"></div>
+
+
+    <div class="box2" id="box7">Toggle text</div>
+    <div id="box7info"><p>This is box7 toggle stuff.</p></div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        //all javascript goes in here
+        $("body").css("background-color", "grey");
+        $("#box1").html("<h1>Step 1</h1>");
+        $("#box2info").hide();
+        $("#box7info").hide();
+        $("#box2").click(function(){
+          $("#box2info").show();
+        });
+        $("#box3").click(function(){
+          $("#box2info").hide();
+        });
+        $("#box4").mouseenter(function(){
+          $("#box4info").css("font-size", "20px");
+        });
+        $("#box4").mouseleave(function(){
+          $("#box4info").css("font-size", "10px");
+        });
+        $("#box5").click(function(){
+          $("#box5Image").html("<img src='https://upload.wikimedia.org/wikipedia/commons/4/43/Michael_Jackson_Cannescropped.jpg'>");
+        });
+        $("#box6").click(function(){
+          $("#box5Image").html("");
+        });
+        $("#box7").click(function(){
+          $("#box7info").toggle(1000);
+        });
+      });
+      //no code after here
+    </script>
 
   </body>
 </html>
