@@ -52,26 +52,11 @@
 
         </main>
         <div class="box" id="box1"></div>
-    <div class="box" id="box7">Click Here for step 1</div>
-    <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
-
-        <div class="box" id="box1"></div>
-    <div class="box" id="box7">Click Here for step 1</div>
+    <div class="box" id="box7">Click Here for Step 1</div>
     <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
 
     <div class="box" id="box7">Click Here for Step 2</div>
     <div id="box7info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
-
-
-
-    <div class="box2" id="box5">Click to show image</div>
-    <div class="box2" id="box6">Click to hide/remove html image</div>
-    <div id="box5Image"></div>
-
-
-    <div class="box2" id="box7">Toggle text</div>
-    <div id="box7info"><p>This is box7 toggle stuff.</p></div>
-
 
 
 
@@ -88,26 +73,10 @@
         $("#box2").click(function(){
           $("#box2info").show();
         });
-        $("#box3").click(function(){
-          $("#box2info").hide();
-        });
-        $("#box4").mouseenter(function(){
-          $("#box4info").css("font-size", "20px");
-        });
-        $("#box4").mouseleave(function(){
-          $("#box4info").css("font-size", "10px");
-        });
-        $("#box5").click(function(){
-          $("#box5Image").html("<img src='https://upload.wikimedia.org/wikipedia/commons/4/43/Michael_Jackson_Cannescropped.jpg'>");
-        });
-        $("#box6").click(function(){
-          $("#box5Image").html("");
-        });
         $("#box7").click(function(){
           $("#box7info").toggle(1000);
         });
       });
-      //no code after here
     </script>
 
   </body>
