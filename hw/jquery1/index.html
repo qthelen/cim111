@@ -57,8 +57,12 @@
 
 
         <div class="box" id="box3"></div>
-    <div class="box" id="box7">Click Here for Step 2</div>
+    <div class="box" id="box8">Click Here for Step 2</div>
     <div id="box4info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
+
+      <div class="box" id="box5"></div>
+    <div class="box" id="box9">Click Here for Step 3</div>
+    <div id="box6info" class="box2"><p><img src="images/SFimage.jpg" alt="Sausage Fattener"></p></div>
 
 
 
@@ -70,13 +74,18 @@
         $("body").css("background-color", "grey");
         $("#box1").html("<h1>Step 1</h1>");
         $("#box3").html("<h1>Step 2</h1>");
+        $("#box5").html("<h1>Step 3</h1>");
         $("#box2info").hide();
         $("#box4info").hide();
-        $("#box2").click(function(){
-          $("#box2info").show();
-        });
+        $("#box6info").hide();
         $("#box7").click(function(){
           $("#box2info").toggle(1000);
+        });
+        $("#box8").click(function(){
+          $("#box4info").toggle(1000);
+        });
+        $("#box9").click(function(){
+          $("#box6info").toggle(1000);
         });
       });
     </script>
