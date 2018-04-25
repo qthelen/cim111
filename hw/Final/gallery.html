@@ -14,6 +14,12 @@
 
     <link rel="stylesheet" href="css/gallerymobile.css" media="only screen and (max-width: 650px)">
 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+        <script src="dist/vmc.simple.slide.min.js"></script>
+        <link rel="stylesheet" href="dist/css/style.min.css">
+
 
     <style>
 
@@ -39,6 +45,15 @@
 
     <main>
 
+
+<div class="box" id="vmc-slide">
+<ul>
+  <li title="Image Caption Here"><img src="Images/HomeRow Performance.jpg"></li>
+  <li><img src="Images/HomeRow Performance.jpg"></li>
+  <li><img src="Images/HomeRow Performance.jpg"></li>
+  ...
+</ul>
+</div>
 
 
 
@@ -99,8 +114,19 @@
 
 
 
-    </main>
 
+
+        <script>
+          $(document).ready(function(){
+            $("#vmc-slide").vmcSimpleSlide();
+
+          });
+
+        </script>
+
+
+
+    </main>
 
 
 
