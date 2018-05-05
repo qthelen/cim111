@@ -14,7 +14,36 @@
 
     <link rel="stylesheet" href="css/homemobile.css" media="only screen and (max-width: 650px)">
 
-    <style>
+
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="dist/vmc.simple.slide.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+
+
+
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .box {
+            height: 600px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .box {
+                height: 400px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                height: 300px;
+            }
+        }
 
 
     </style>
@@ -37,6 +66,27 @@
     </header>
 
     <main>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="box" id="vmc-slide" class="center">
+      <ul>
+        <li title="Images"><img src="images/Crawl.jpg"></li>
+        <li><img src="images/Nicolette.jpg"></li>
+        <li><img src="images/Phil.jpg"></li>
+        <li><img src="images/Sandy.jpg"></li>
+        <li><img src="images/Sooner.jpg"></li>
+        <li><img src="images/Xception.jpg"></li>
+        <li><img src="images/HomeRowPerformance.jpg"></li>
+        .......
+      </ul>
+      </div>
+
+
+
       <h2 class="title">Work</h2> <p>
 
         <div id="workgrid">
@@ -71,11 +121,27 @@
 
         </div>
 
-        <p><b>Here is an image of me performing! (middle left)</b></p> <br>
-        <img src="Images/HomeRow Performance.jpg" width="600">
 
-
-
+        <script type="text/javascript">
+            $(function () {
+                $('#vmc-slide').vmcSimpleSlide({
+                    minWidth: 400
+                });
+                $('#re-size').on('click', function () {
+                    $('#vmc-slide').vmcSimpleSlide('reSize');
+                });
+                $('#show-box').on('click', function () {
+                    $('#vmc-slide').show();
+                });
+                $('#hide-box').on('click', function () {
+                    $('#vmc-slide').hide();
+                });
+                $('#show-box-2').on('click', function () {
+                    $('#vmc-slide').show();
+                    $('#vmc-slide').vmcSimpleSlide('reSize');
+                });
+            });
+        </script>
 
 
     </main>
