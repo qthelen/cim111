@@ -43,3 +43,7 @@ nav ul{
   border-color: black;
   border-width: 30px;
 }
+
+#picturebox{
+  width: 80%;
+}
