@@ -15,32 +15,8 @@
     <link rel="stylesheet" href="css/gallerymobile.css" media="only screen and (max-width: 650px)">
 
 
-        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="dist/vmc.simple.slide.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
-
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-
-        .box {
-            height: 600px;
-        }
-
-        @media screen and (max-width: 992px) {
-            .box {
-                height: 400px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .box {
-                height: 300px;
-            }
-        }
-
+    
+    <style>
 
     </style>
 
@@ -66,14 +42,6 @@
     <main>
 
 
-      <div class="box" id="vmc-slide">
-      <ul>
-        <li title="Images"><img src="images/HomeRowPerformance.jpg"></li>
-        <li></li>
-        <li><img src="images/HomeRowPerformance.jpg"></li>
-        ...
-      </ul>
-      </div>
 
 
 
@@ -131,27 +99,6 @@
 
 
 
-
-        <script type="text/javascript">
-            $(function () {
-                $('#vmc-slide').vmcSimpleSlide({
-                    minWidth: 400
-                });
-                $('#re-size').on('click', function () {
-                    $('#vmc-slide').vmcSimpleSlide('reSize');
-                });
-                $('#show-box').on('click', function () {
-                    $('#vmc-slide').show();
-                });
-                $('#hide-box').on('click', function () {
-                    $('#vmc-slide').hide();
-                });
-                $('#show-box-2').on('click', function () {
-                    $('#vmc-slide').show();
-                    $('#vmc-slide').vmcSimpleSlide('reSize');
-                });
-            });
-        </script>
 
 
 
