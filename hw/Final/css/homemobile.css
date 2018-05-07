@@ -23,6 +23,7 @@ nav ul{
   padding: 0px;
   position: fixed;
   top: 0;
+  height: 30px;
   width: 100%;
   background-color:lightblue;
   border-color: black;
@@ -31,4 +32,7 @@ nav ul{
 
 nav ul li{
   display:inline;
+}
+nav ul li a {
+    padding: 0px 5px;
 }

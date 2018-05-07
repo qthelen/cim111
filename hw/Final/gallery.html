@@ -29,14 +29,41 @@
   <body>
 
     <header>
-      <h1 class="title">Thelen Gallery</h1>
+      <h1 class="title"><span class="zoom">Thelen Gallery</span></h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Client List">Client List</a></li>
+		      <li>
+		          <a href="https://www.facebook.com/Thelen-236197720275881/" target="_blank" >
+			             <div>
+				                 <img src="images/facebook.png" alt="" />
+			             </div>
+		          </a>
+	        </li>
+		      <li>
+		          <a href="https://twitter.com/XceptionMusic" target="_blank" >
+			             <div>
+				                 <img src="images/twitter.png" alt="" />
+			             </div>
+		          </a>
+	        </li>
+		      <li>
+		          <a href="https://www.youtube.com/channel/UCGN6-BHlqRkVpjI4DxJutHQ" target="_blank" >
+			             <div>
+				                 <img src="images/youtube.png" alt="" />
+			             </div>
+		          </a>
+	        </li>
+
+
+		</ul></div>
       </nav>
+
+
     </header>
 
     <main>
@@ -48,12 +75,12 @@
 
 
 
-      <h2 class="title">Hired Productions</h2> <p>
+      <h2 class="title"><span class="zoom">Hired Productions</span></h2> <p>
         <h4 class="center">(all my productions have been mastered by me as well)<h4>
 
         <div id="gallerygrid2">
 
-          <div> <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321050293&color=%2300166b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321050293&color=%2300166b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
           </div>
           <div> <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321038809&color=%2300166b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
           </div>
@@ -103,7 +130,45 @@
 
 
 
+          <script src="zoomerang.js"></script>
+          <script>
+              Array.prototype.forEach.call(document.querySelectorAll('p'), function (p, i) {
+                  p.style.marginLeft = i * 6 + '%'
+              })
+              Zoomerang
+                  .config({
+                      maxHeight: 400,
+                      maxWidth: 400,
+                      bgColor: '#000',
+                      bgOpacity: .85,
+                      onOpen: openCallback,
+                      onClose: closeCallback,
+                      onBeforeOpen: beforeOpenCallback,
+                      onBeforeClose: beforeCloseCallback
+                  })
+                  .listen('.zoom')
 
+              function openCallback (el) {
+                  console.log('zoomed in on: ')
+                  console.log(el)
+              }
+
+              function closeCallback (el) {
+                  console.log('zoomed out on: ')
+                  console.log(el)
+              }
+
+              function beforeOpenCallback (el) {
+                console.log('on before zoomed in on:')
+                console.log(el)
+              }
+
+              function beforeCloseCallback (el) {
+                console.log('on before zoomed out on:')
+                console.log(el)
+              }
+
+          </script>
 
 
 
