@@ -10,7 +10,7 @@ body{
 #clientgrid{
   height: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 500px 400px;
   background-color: lightgrey;
 }

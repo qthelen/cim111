@@ -2,11 +2,13 @@
 
 
 #contactgrid{
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 100%;
+  grid-template-rows: 0.5fr 0fr 1fr 0fr 0.5fr 0fr 1fr;
+  grid-template-columns: 95%;
 }
 
-
+.lefttext{
+  padding-left: 10px;
+}
 
 .title{
   text-align: center;

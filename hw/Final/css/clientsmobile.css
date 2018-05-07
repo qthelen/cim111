@@ -4,6 +4,7 @@
 #clientgrid{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 100%;
+  background-color: lightgrey;
 }
 
 
